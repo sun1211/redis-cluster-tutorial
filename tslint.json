@@ -1,0 +1,27 @@
+{
+  "defaultSeverity": "error",
+  "extends": ["tslint-plugin-prettier", "tslint-config-prettier"],
+  "rules": {
+    "prettier": true,
+    "ban": [
+      true,
+      "eval",
+      {
+        "name": "fdescribe",
+        "message": "don't focus test suite"
+      },
+      {
+        "name": ["describe", "only"],
+        "message": "don't focus test suite"
+      },
+      {
+        "name": "fit",
+        "message": "don't focus test case"
+      },
+      {
+        "name": ["it", "only"],
+        "message": "don't focus test case"
+      }
+    ]
+  }
+}
