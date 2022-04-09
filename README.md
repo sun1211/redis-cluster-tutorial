@@ -5,7 +5,7 @@
  - node v14.17.0 or higher
 1. Start redis using docker
 ```
-yarn run start
+yarn run start-redis
 ```
 
 2. Start example
