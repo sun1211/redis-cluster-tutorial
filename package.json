@@ -9,11 +9,14 @@
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
-    "redis": "^4.0.6"
+    "generic-pool": "^3.9.0",
+    "ioredis": "5.4.1",
+    "redis": "4.6.14"
   },
   "scripts": {
     "build": "rimraf build && tsc -p tsconfig.json",
-    "start": "NODE_ENV=test nodemon src/api.ts",
+    "start:single": "NODE_ENV=test nodemon src/api.ts",
+    "start:multiple": "NODE_ENV=test nodemon src/api_multiple.ts",
     "start-redis": "docker-compose up -d"
   },
   "devDependencies": {
