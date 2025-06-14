@@ -198,3 +198,7 @@ You can then connect to the Redis cluster and run the `CLUSTER NODES` command as
 44444520eb2bbc346ab4dba9b1c495973399a227 192.168.1.184:6375@16375 myself,slave 841b05c2890454b345da8380ee63fa41c03fae6b 0 1683717017000 2 connected
 8f14d7d1faac0e131d315ee34c0c7fc3836716c9 192.168.1.184:6373@16373 slave 275c337ffe6073071088bb0706a2536608c03fe9 0 1683717019000 3 connected
 ```
+
+## More Question:
+
+See documentation [here](common_question.md)
