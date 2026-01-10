@@ -11,12 +11,18 @@
     "express": "^4.17.1",
     "generic-pool": "^3.9.0",
     "ioredis": "5.4.1",
-    "redis": "4.6.14"
+    "redis": "4.6.14",
+    "socket.io": "^4.5.4"
   },
   "scripts": {
     "build": "rimraf build && tsc -p tsconfig.json",
     "start:single": "NODE_ENV=test nodemon src/api.ts",
     "start:multiple": "NODE_ENV=test nodemon src/api_multiple.ts",
+    "start:simple_cache": "NODE_ENV=test nodemon src/simple_cache_api.ts",
+    "start:session_storage": "NODE_ENV=test nodemon src/session_storage.ts.ts",
+    "start:rate_limit": "NODE_ENV=test nodemon src/rate_limit.ts",
+    "start:task_queue": "NODE_ENV=test nodemon src/task_queue.ts",
+    "start:real_time_dashboard": "NODE_ENV=test nodemon src/real_time_dashboard.ts",
     "start-redis": "docker-compose up -d"
   },
   "devDependencies": {
